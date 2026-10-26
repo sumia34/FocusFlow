@@ -1,0 +1,175 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta name="theme-color" content="#101311" />
+    <meta name="description" content="Make meaningful progress toward your goals with ForceFlow." />
+    <title>ForceFlow | Overview</title>
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      crossorigin="anonymous"
+    />
+    <link rel="stylesheet" href="./style.css" />
+    <script src="./script.js" defer></script>
+  </head>
+  <body>
+    <a class="skip-link" href="#main-content">Skip to main content</a>
+    <div class="app-shell">
+      <button class="sidebar-backdrop" id="sidebar-backdrop" type="button" aria-label="Close navigation" hidden></button>
+      <aside class="sidebar" id="sidebar" aria-label="Main navigation">
+        <a class="brand" href="#overview" aria-label="ForceFlow overview">
+          <span class="brand-symbol" aria-hidden="true">F</span>
+          <span class="brand-name">force<span>flow</span></span>
+        </a>
+
+        <p class="nav-label">WORKSPACE</p>
+        <nav class="side-nav" aria-label="Workspace">
+          <a class="nav-item is-active" href="#overview" aria-current="page">
+            <svg viewBox="0 0 24 24" aria-hidden="true"><rect x="3.5" y="3.5" width="7" height="7" rx="1.5"/><rect x="13.5" y="3.5" width="7" height="7" rx="1.5"/><rect x="3.5" y="13.5" width="7" height="7" rx="1.5"/><rect x="13.5" y="13.5" width="7" height="7" rx="1.5"/></svg>
+            <span>Overview</span>
+          </a>
+          <button class="nav-item" type="button" disabled aria-disabled="true" title="My Tasks is planned for a later feature">
+            <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M8 6h12M8 12h12M8 18h12"/><path d="m3.5 6 .8.8L5.8 5M3.5 12l.8.8 1.5-1.8M3.5 18l.8.8 1.5-1.8"/></svg>
+            <span>My Tasks</span><span class="nav-soon">SOON</span>
+          </button>
+          <button class="nav-item" type="button" disabled aria-disabled="true" title="Focus Sessions are planned for a later feature">
+            <svg viewBox="0 0 24 24" aria-hidden="true"><circle cx="12" cy="12" r="8.5"/><path d="M12 7v5l3 2"/></svg>
+            <span>Focus Sessions</span><span class="nav-soon">SOON</span>
+          </button>
+          <button class="nav-item" type="button" disabled aria-disabled="true" title="Progress is planned for a later feature">
+            <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M4 19.5h16M6.5 16V11m5 5V5m5 11V8"/></svg>
+            <span>Progress</span><span class="nav-soon">SOON</span>
+          </button>
+        </nav>
+
+        <p class="nav-label nav-label--lower">PREFERENCES</p>
+        <nav class="side-nav" aria-label="Preferences">
+          <button class="nav-item" type="button" disabled aria-disabled="true" title="Settings are planned for a later feature">
+            <svg viewBox="0 0 24 24" aria-hidden="true"><circle cx="12" cy="12" r="3"/><path d="m19.4 15 .1.1a1.7 1.7 0 0 1-2.4 2.4l-.1-.1a1.7 1.7 0 0 0-2.9 1.2v.2a1.7 1.7 0 0 1-3.4 0v-.2a1.7 1.7 0 0 0-2.9-1.2l-.1.1a1.7 1.7 0 0 1-2.4-2.4l.1-.1a1.7 1.7 0 0 0-1.2-2.9H4a1.7 1.7 0 0 1 0-3.4h.2a1.7 1.7 0 0 0 1.2-2.9l-.1-.1a1.7 1.7 0 0 1 2.4-2.4l.1.1a1.7 1.7 0 0 0 2.9-1.2V2a1.7 1.7 0 0 1 3.4 0v.2a1.7 1.7 0 0 0 2.9 1.2l.1-.1a1.7 1.7 0 0 1 2.4 2.4l-.1.1a1.7 1.7 0 0 0 1.2 2.9h.2a1.7 1.7 0 0 1 0 3.4h-.2a1.7 1.7 0 0 0-1.2 2.9Z"/></svg>
+            <span>Settings</span><span class="nav-soon">SOON</span>
+          </button>
+        </nav>
+
+        <div class="sidebar-note">
+          <span class="sidebar-note-mark" aria-hidden="true">01</span>
+          <p>One meaningful step is enough to begin.</p>
+        </div>
+        <p class="sidebar-version">FORCEFLOW <span>·</span> DAY 01</p>
+      </aside>
+
+      <main class="main-content" id="main-content">
+        <header class="topbar">
+          <div class="topbar-leading">
+            <button class="mobile-menu" id="mobile-menu" type="button" aria-controls="sidebar" aria-expanded="false" aria-label="Open navigation">
+              <span></span><span></span><span></span>
+            </button>
+            <div>
+              <p class="topbar-kicker">YOUR WORKSPACE</p>
+              <h1>Overview</h1>
+            </div>
+          </div>
+          <div class="topbar-trailing">
+            <p class="welcome-copy">Welcome back<span class="welcome-dot">.</span><span class="welcome-subtitle">A little progress adds up.</span></p>
+            <div class="topbar-divider" aria-hidden="true"></div>
+            <time class="today-date" id="today-date"></time>
+            <div class="avatar" aria-label="Profile placeholder, no account connected">FF</div>
+          </div>
+        </header>
+
+        <section class="goal-banner" aria-labelledby="goal-heading">
+          <div class="goal-copy">
+            <p class="section-eyebrow"><span class="status-dot"></span> YOUR NORTH STAR <span class="sample-tag">SAMPLE GOAL</span></p>
+            <h2 id="goal-heading">Make meaningful progress today.</h2>
+            <p class="goal-subtitle">Small, intentional actions build long-term progress.</p>
+            <div class="goal-current">
+              <span class="goal-icon" aria-hidden="true">
+                <svg viewBox="0 0 24 24"><path d="M12 3.5v17M5 9l7-5.5L19 9M6.5 20.5h11"/></svg>
+              </span>
+              <div><span class="goal-label">CURRENT LONG-TERM GOAL</span><strong>Build my first useful web app</strong></div>
+            </div>
+          </div>
+          <button class="button-quiet" id="edit-goal" type="button" aria-describedby="goal-edit-note">
+            <svg viewBox="0 0 24 24" aria-hidden="true"><path d="m14.5 5.5 4 4M4 20l4.4-.8L19 8.6a2.8 2.8 0 0 0-4-4L4.8 15.6 4 20Z"/></svg>
+            <span>Edit Goal</span>
+          </button>
+          <span class="visually-hidden" id="goal-edit-note">Goal editing will be added in a later feature.</span>
+          <div class="goal-orbit goal-orbit--one" aria-hidden="true"></div>
+          <div class="goal-orbit goal-orbit--two" aria-hidden="true"></div>
+        </section>
+
+        <section class="stats-section" aria-labelledby="stats-heading">
+          <div class="section-title-row">
+            <div><p class="section-eyebrow">A QUICK PULSE</p><h2 id="stats-heading">Overview stats</h2></div>
+            <span class="sample-disclaimer"><span aria-hidden="true">i</span> Sample data · not your activity</span>
+          </div>
+          <div class="stats-grid">
+            <article class="stat-card">
+              <div class="stat-top"><span class="stat-icon stat-icon--mint" aria-hidden="true"><svg viewBox="0 0 24 24"><path d="m5 12.5 4.2 4.2L19 7"/></svg></span><span class="sample-pill">SAMPLE</span></div>
+              <p class="stat-label">Tasks completed</p><p class="stat-value">04</p><p class="stat-foot">Example number</p>
+            </article>
+            <article class="stat-card">
+              <div class="stat-top"><span class="stat-icon stat-icon--lime" aria-hidden="true"><svg viewBox="0 0 24 24"><path d="M12 5v14M5 12h14"/></svg></span><span class="sample-pill">SAMPLE</span></div>
+              <p class="stat-label">Tasks remaining</p><p class="stat-value">02</p><p class="stat-foot">Example number</p>
+            </article>
+            <article class="stat-card">
+              <div class="stat-top"><span class="stat-icon stat-icon--blue" aria-hidden="true"><svg viewBox="0 0 24 24"><circle cx="12" cy="12" r="8.5"/><path d="M12 7v5l3 2"/></svg></span><span class="sample-pill">SAMPLE</span></div>
+              <p class="stat-label">Focus time</p><p class="stat-value">1<span class="stat-unit">h</span> 25<span class="stat-unit">m</span></p><p class="stat-foot">Example number</p>
+            </article>
+            <article class="stat-card">
+              <div class="stat-top"><span class="stat-icon stat-icon--amber" aria-hidden="true"><svg viewBox="0 0 24 24"><path d="M12 3.5c1.6 3.1 5.2 4.4 5.2 8.5a5.2 5.2 0 1 1-10.4 0c0-2 1-4 2.7-5.8.2 2 1.1 2.8 2.5 3.4"/></svg></span><span class="sample-pill">SAMPLE</span></div>
+              <p class="stat-label">Current streak</p><p class="stat-value">03<span class="stat-unit"> days</span></p><p class="stat-foot">Example number</p>
+            </article>
+          </div>
+        </section>
+
+        <div class="dashboard-grid">
+          <section class="tasks-panel" aria-labelledby="tasks-heading">
+            <div class="panel-heading">
+              <div><p class="section-eyebrow">ONE STEP AT A TIME</p><h2 id="tasks-heading">Today's Focus <span class="task-count" id="task-count">0</span></h2></div>
+              <button class="button-add" id="open-task-form" type="button">
+                <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M12 5v14M5 12h14"/></svg><span>Add Task</span>
+              </button>
+            </div>
+
+            <form class="task-form" id="task-form" aria-labelledby="task-form-heading" hidden novalidate>
+              <div class="form-heading"><div><p class="section-eyebrow">NEW PRIORITY</p><h3 id="task-form-heading">Add a task</h3></div><span class="form-step">01</span></div>
+              <div class="mb-3">
+                <label class="form-label" for="task-title">Task title</label>
+                <input class="form-control" id="task-title" name="title" type="text" placeholder="e.g., Practise JavaScript functions" maxlength="120" required aria-describedby="task-title-error" />
+                <p class="form-error" id="task-title-error" role="alert" hidden>Enter a task title to add it to today’s focus.</p>
+              </div>
+              <div class="mb-4">
+                <label class="form-label" for="task-priority">Priority</label>
+                <select class="form-select" id="task-priority" name="priority">
+                  <option value="low">Low</option><option value="medium" selected>Medium</option><option value="high">High</option>
+                </select>
+              </div>
+              <div class="form-actions"><button class="button-quiet" id="cancel-task" type="button">Cancel</button><button class="button-add" type="submit"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M12 5v14M5 12h14"/></svg><span>Add Task</span></button></div>
+            </form>
+
+            <div class="task-feedback" id="task-feedback" role="status" aria-live="polite"></div>
+            <div class="empty-tasks" id="empty-tasks">
+              <span class="empty-mark" aria-hidden="true"><svg viewBox="0 0 24 24"><path d="M6 4.5h12A1.5 1.5 0 0 1 19.5 6v14l-7.5-4-7.5 4V6A1.5 1.5 0 0 1 6 4.5Z"/><path d="M9 9h6m-6 3.5h4"/></svg></span>
+              <h3>Your day is still open.</h3>
+              <p>Add one meaningful task to give your focus a place to land.</p>
+              <button class="empty-add" id="empty-add-task" type="button">Add your first task <span aria-hidden="true">→</span></button>
+            </div>
+            <ul class="task-list" id="task-list" aria-label="Today's tasks" aria-live="polite"></ul>
+            <p class="memory-note">Tasks are held in memory for this preview and clear when you refresh.</p>
+          </section>
+
+          <section class="focus-panel" aria-labelledby="focus-heading">
+            <div class="panel-heading panel-heading--focus"><div><p class="section-eyebrow">PROTECT A LITTLE SPACE</p><h2 id="focus-heading">Focus session</h2></div><span class="preview-pill">PREVIEW</span></div>
+            <p class="focus-description">A quiet block for one thing that matters.</p>
+            <div class="timer-preview" aria-label="Static 25 minute timer preview"><span class="timer-ring" aria-hidden="true"><span></span></span><div class="timer-time">25<span>:00</span></div></div>
+            <p class="timer-note"><span aria-hidden="true">i</span> Timer controls arrive in a later feature.</p>
+          </section>
+        </div>
+        <footer class="dashboard-footer"><span>Progress comes from meaningful steps, not perfect days.</span><span>FORCEFLOW <i aria-hidden="true">/</i> 01</span></footer>
+      </main>
+    </div>
+    <div class="toast-region" id="toast-region" role="status" aria-live="polite"></div>
+  </body>
+</html>
